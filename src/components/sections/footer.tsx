@@ -6,11 +6,11 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 
 const footerLinks = {
   Product: [
-    { label: "Features", href: "#features" },
+    { label: "Features", href: "/features" },
+    { label: "Use Cases", href: "/use-cases" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Integrations", href: "#integrations" },
+    { label: "Enterprise", href: "/enterprise" },
     { label: "Roadmap", href: "https://imqa.featurebase.app/roadmap" },
-    { label: "Changelog", href: "#" },
   ],
   Resources: [
     { label: "Documentation", href: "#" },
@@ -19,14 +19,14 @@ const footerLinks = {
     { label: "Status", href: "#" },
   ],
   Company: [
-    { label: "About", href: "#" },
-    { label: "Careers", href: "#" },
+    { label: "About", href: "/about" },
+    { label: "Careers", href: "mailto:careers@imqa.ai" },
     { label: "Contact", href: "mailto:hello@imqa.ai" },
   ],
   Legal: [
     { label: "Privacy", href: "#" },
     { label: "Terms", href: "#" },
-    { label: "Security", href: "#" },
+    { label: "Security", href: "/enterprise#security" },
   ],
 };
 

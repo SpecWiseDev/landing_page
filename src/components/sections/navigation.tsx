@@ -8,24 +8,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const featuresDropdown = [
   {
-    title: "Test Recorder",
-    description: "Record user flows and generate tests automatically with AI",
-    href: "#features",
+    title: "Natural Language Testing",
+    description: "Write tests in plain English, IMQA generates the code",
+    href: "/features#natural-language",
   },
   {
-    title: "Self-Healing",
+    title: "Self-Healing Selectors",
     description: "Tests that adapt to UI changes without manual intervention",
-    href: "#features",
+    href: "/features#self-healing",
+  },
+  {
+    title: "Cross-Browser Execution",
+    description: "Chrome, Firefox, Safari, Edge - consistent results everywhere",
+    href: "/features#cross-browser",
   },
   {
     title: "CI/CD Integration",
     description: "Seamlessly integrate with GitHub Actions, GitLab, Jenkins",
-    href: "#features",
-  },
-  {
-    title: "Analytics",
-    description: "Track test health, coverage, and performance metrics",
-    href: "#features",
+    href: "/features#ci-cd",
   },
 ];
 
@@ -92,11 +92,11 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { label: "Features", href: "#features", dropdown: featuresDropdown },
-    { label: "Resources", href: "#resources", dropdown: resourcesDropdown },
+    { label: "Features", href: "/features", dropdown: featuresDropdown },
+    { label: "Use Cases", href: "/use-cases", dropdown: null },
     { label: "Pricing", href: "/pricing", dropdown: null },
-    { label: "Docs", href: "#", dropdown: null },
-    { label: "Enterprise", href: "#", dropdown: null },
+    { label: "About", href: "/about", dropdown: null },
+    { label: "Enterprise", href: "/enterprise", dropdown: null },
   ];
 
   return (
