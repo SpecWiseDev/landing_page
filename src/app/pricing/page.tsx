@@ -14,7 +14,7 @@ const plans = [
     period: "/month",
     description: "Solo founders & indie builders validating core user flows before release.",
     cta: "Run QA Agent",
-    ctaLink: "https://app.imqa.ai/signup",
+    ctaLink: "https://app.imqa.ai/auth/login",
     highlighted: false,
     includedText: "Includes:",
     features: [
@@ -34,7 +34,7 @@ const plans = [
     period: "/month",
     description: "Early-stage product teams shipping weekly.",
     cta: "Run QA Agent",
-    ctaLink: "https://app.imqa.ai/signup",
+    ctaLink: "https://app.imqa.ai/auth/login",
     highlighted: true,
     badge: "Popular",
     includedText: "Everything in Starter, plus:",
@@ -53,7 +53,7 @@ const plans = [
     period: "/month",
     description: "Growing SaaS teams with frequent releases and multiple critical flows.",
     cta: "Run QA Agent",
-    ctaLink: "https://app.imqa.ai/signup",
+    ctaLink: "https://app.imqa.ai/auth/login",
     highlighted: false,
     includedText: "Everything in Team, plus:",
     features: [

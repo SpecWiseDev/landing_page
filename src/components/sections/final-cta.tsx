@@ -82,7 +82,7 @@ export function FinalCTA() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.imqa.ai/signup"
+                href="https://app.imqa.ai/auth/login"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium transition-all duration-200 hover:scale-105"
                 style={{
                   backgroundColor: "rgb(249, 250, 245)",

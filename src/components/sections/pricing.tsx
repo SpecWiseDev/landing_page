@@ -18,7 +18,7 @@ const plans = [
       "7-day test history",
     ],
     cta: "Get started",
-    href: "https://app.imqa.ai/signup",
+    href: "https://app.imqa.ai/auth/login",
     highlighted: false,
   },
   {
@@ -37,7 +37,7 @@ const plans = [
       "90-day test history",
     ],
     cta: "Start free trial",
-    href: "https://app.imqa.ai/signup",
+    href: "https://app.imqa.ai/auth/login",
     highlighted: true,
   },
   {

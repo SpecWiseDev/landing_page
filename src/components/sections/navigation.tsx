@@ -236,7 +236,7 @@ export function Navigation() {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-6">
               <Link
-                href="https://app.imqa.ai/signup"
+                href="https://app.imqa.ai/auth/login"
                 className="px-5 py-2.5 text-[15px] font-medium transition-all hover:scale-105"
                 style={{
                   backgroundColor: "rgb(249, 250, 245)",
@@ -334,7 +334,7 @@ export function Navigation() {
                   style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)" }}
                 >
                   <Link
-                    href="https://app.imqa.ai/signup"
+                    href="https://app.imqa.ai/auth/login"
                     className="px-5 py-2.5 text-[15px] font-medium text-center"
                     style={{
                       backgroundColor: "rgb(249, 250, 245)",

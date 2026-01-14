@@ -71,7 +71,7 @@ export function Hero() {
               className="mt-10 flex flex-col gap-4"
             >
               <Link
-                href="https://app.imqa.ai/signup"
+                href="https://app.imqa.ai/auth/login"
                 className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-medium w-fit transition-all duration-200 hover:scale-105"
                 style={{
                   backgroundColor: "rgb(249, 250, 245)",
