@@ -48,11 +48,12 @@ export function ProblemSolution() {
           className="relative mb-32"
         >
           <ImageComparisonSlider
-            beforeImage="/screenshots/pexels-lastly-808466.jpg"
-            afterImage="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Live_Agent.gif"
+            beforeBackground="/screenshots/pexels-lastly-808466.jpg"
+            afterBackground="/screenshots/pexels-mohamed-elshawry-10645-55367.jpg"
+            afterOverlay="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Live_Agent.gif"
+            afterOverlayIsGif
             beforeLabel="Traditional QA"
             afterLabel="IMQA"
-            afterIsGif
           />
         </motion.div>
 

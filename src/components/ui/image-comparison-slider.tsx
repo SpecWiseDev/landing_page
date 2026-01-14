@@ -4,21 +4,27 @@ import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 
 interface ImageComparisonSliderProps {
-  beforeImage: string;
-  afterImage: string;
+  beforeBackground: string;
+  afterBackground: string;
+  beforeOverlay?: string;
+  afterOverlay?: string;
   beforeLabel?: string;
   afterLabel?: string;
   className?: string;
-  afterIsGif?: boolean;
+  beforeOverlayIsGif?: boolean;
+  afterOverlayIsGif?: boolean;
 }
 
 export function ImageComparisonSlider({
-  beforeImage,
-  afterImage,
+  beforeBackground,
+  afterBackground,
+  beforeOverlay,
+  afterOverlay,
   beforeLabel = "Before",
   afterLabel = "After",
   className = "",
-  afterIsGif = false,
+  beforeOverlayIsGif = false,
+  afterOverlayIsGif = false,
 }: ImageComparisonSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
@@ -62,19 +68,35 @@ export function ImageComparisonSlider({
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
     >
-      {/* After Image (Right/Background) */}
+      {/* After Side (Right/Background) */}
       <div className="absolute inset-0">
+        {/* Background Image */}
         <Image
-          src={afterImage}
-          alt={afterLabel}
+          src={afterBackground}
+          alt=""
           fill
           className="object-cover"
           draggable={false}
-          unoptimized={afterIsGif}
         />
+        {/* Overlay GIF/Image */}
+        {afterOverlay && (
+          <div className="absolute inset-4 md:inset-6 lg:inset-8 flex items-center justify-center">
+            <div className="relative w-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
+              <Image
+                src={afterOverlay}
+                alt={afterLabel}
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                draggable={false}
+                unoptimized={afterOverlayIsGif}
+              />
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Before Image (Left/Overlay) */}
+      {/* Before Side (Left/Overlay) */}
       <div
         className="absolute top-0 left-0 h-full overflow-hidden"
         style={{ width: `${sliderPosition}%` }}
@@ -83,13 +105,30 @@ export function ImageComparisonSlider({
           className="absolute top-0 left-0 h-full"
           style={{ width: `${100 / (sliderPosition / 100)}%` }}
         >
+          {/* Background Image */}
           <Image
-            src={beforeImage}
-            alt={beforeLabel}
+            src={beforeBackground}
+            alt=""
             fill
             className="object-cover"
             draggable={false}
           />
+          {/* Overlay GIF/Image */}
+          {beforeOverlay && (
+            <div className="absolute inset-4 md:inset-6 lg:inset-8 flex items-center justify-center">
+              <div className="relative w-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
+                <Image
+                  src={beforeOverlay}
+                  alt={beforeLabel}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                  draggable={false}
+                  unoptimized={beforeOverlayIsGif}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
