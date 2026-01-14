@@ -50,9 +50,9 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="text-[3.5rem] md:text-[5rem] lg:text-[6rem] font-medium tracking-[-0.04em] leading-[0.95] text-[var(--text-primary)]"
             >
-              The AI that
+              Tests that write
               <br />
-              tests your code
+              themselves.
             </motion.h1>
 
             <motion.p
@@ -61,7 +61,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mt-6 text-xl text-[var(--text-secondary)] leading-relaxed"
             >
-              From prompt to production, IMQA is where developers ship software with confidence.
+              Describe what to test in plain language. IMQA generates production-ready code, runs it across browsers, and maintains it automatically.
             </motion.p>
 
             <motion.div

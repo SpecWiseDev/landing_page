@@ -7,30 +7,30 @@ import Image from "next/image";
 const features = [
   {
     id: 1,
-    title: "Prompt and plan your test",
+    title: "Describe your test",
     description:
-      "Tell IMQA what you want to test and provide any context. Use natural language to create a detailed, tweakable test plan before execution begins.",
+      "Specify what to test in natural language. IMQA generates a detailed test plan you can review and refine before execution.",
     image: "/screenshots/dashboard.png",
   },
   {
     id: 2,
-    title: "AI writes test code",
+    title: "Generate code",
     description:
-      "IMQA writes test code tailored to your application. Every step is visible, editable, and you can re-direct the AI at any time without stopping it.",
+      "Watch as IMQA writes production-ready test code. Every step is visible, editable, and can be adjusted in real-time.",
     image: "/screenshots/side-nav.png",
   },
   {
     id: 3,
-    title: "Review and re-prompt",
+    title: "Refine and iterate",
     description:
-      "IMQA's review interface helps you understand and refine tests. Ask the AI to refine a specific step, or edit the test in the lightweight editor.",
+      "Review generated tests, request modifications in natural language, or edit directly. Collaborative refinement until your tests are exactly right.",
     image: "/screenshots/test-results.png",
   },
   {
     id: 4,
-    title: "Ship and maintain",
+    title: "Deploy with confidence",
     description:
-      "IMQA operates across the whole testing lifecycle. When your tests are ready, ship them. Monitor results, look into failures, and more.",
+      "Push to CI/CD, monitor results, and let self-healing selectors handle maintenance. Your tests stay reliable as your product evolves.",
     image: "/screenshots/dashboard.png",
   },
 ];
@@ -85,10 +85,10 @@ export function Features() {
           className="mb-12"
         >
           <p className="text-[#d4a574] text-2xl md:text-3xl font-light italic mb-2">
-            Tightest feedback loop
+            How it works
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-medium tracking-[-0.02em] leading-[1.15] text-[var(--text-primary)] max-w-2xl">
-            Steer AI to go from prompt to passing tests
+            From intent to passing tests in minutes
           </h2>
         </motion.div>
 

@@ -46,7 +46,7 @@ export function FinalCTA() {
                 marginBottom: "8px",
               }}
             >
-              Ready to transform your QA?
+              Get started
             </p>
 
             {/* Main Headline */}
@@ -60,7 +60,7 @@ export function FinalCTA() {
                 marginBottom: "24px",
               }}
             >
-              Start testing smarter with IMQA today
+              Start building reliable tests today
             </h2>
 
             {/* Description */}
@@ -75,8 +75,8 @@ export function FinalCTA() {
                 marginRight: "auto",
               }}
             >
-              Join thousands of QA teams who have eliminated flaky tests and
-              reduced testing time by 10x with AI-powered automation.
+              Join engineering teams who have reduced test maintenance by 80%
+              and accelerated release cycles with AI-powered automation.
             </p>
 
             {/* CTA Buttons */}
@@ -129,7 +129,7 @@ export function FinalCTA() {
                 color: "rgba(250, 249, 246, 0.5)",
               }}
             >
-              No credit card required • Free tier available • Setup in minutes
+              Free tier available · No credit card required · Setup in minutes
             </p>
           </motion.div>
         </div>

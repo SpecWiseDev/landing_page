@@ -17,10 +17,10 @@ export function ProblemSolution() {
             transition={{ duration: 0.5 }}
           >
             <p className="text-[#d4a574] text-lg md:text-xl font-medium mb-4">
-              A new way to test
+              Intelligent testing infrastructure
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-medium tracking-[-0.03em] leading-[1.1] text-[var(--text-primary)]">
-              An AI-powered testing environment
+              Built for teams who ship fast
             </h2>
           </motion.div>
 
@@ -33,7 +33,7 @@ export function ProblemSolution() {
             className="lg:pt-8"
           >
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-              QA teams using IMQA save on average 10 hours a week from eliminating flaky tests, self-healing selectors, and accomplishing more of their testing workflow from a single app.
+              Engineering teams using IMQA reclaim 10+ hours per week — time previously lost to test maintenance, flaky failures, and brittle selectors. One platform for creation, execution, and analysis.
             </p>
           </motion.div>
         </div>
@@ -114,10 +114,10 @@ export function ProblemSolution() {
               className="max-w-3xl mb-16"
             >
               <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-medium tracking-[-0.03em] leading-[1.1] text-[var(--text-primary)] mb-6">
-                State of the art AI
+                Intelligence that scales with your product
               </h2>
               <p className="text-xl md:text-2xl text-[var(--text-secondary)] leading-relaxed">
-                Leading AI models and full browser automation across the software testing lifecycle
+                Multi-model architecture ensures you're always testing with the most capable AI available. Full browser automation across Chrome, Firefox, Safari, and Edge.
               </p>
             </motion.div>
 
@@ -133,14 +133,14 @@ export function ProblemSolution() {
                 <span className="text-lg">🏆</span>
                 <div>
                   <p className="text-sm font-medium text-[var(--text-primary)]">98.5%</p>
-                  <p className="text-xs text-[var(--text-muted)]">Test Pass Rate</p>
+                  <p className="text-xs text-[var(--text-muted)]">First-run pass rate</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 px-5 py-3 rounded-full bg-[var(--bg-card)]/80 backdrop-blur-sm border border-[var(--border)]">
                 <span className="text-lg">⚡</span>
                 <div>
                   <p className="text-sm font-medium text-[var(--text-primary)]">10x Faster</p>
-                  <p className="text-xs text-[var(--text-muted)]">Than Manual Testing</p>
+                  <p className="text-xs text-[var(--text-muted)]">Than manual test creation</p>
                 </div>
               </div>
             </motion.div>
@@ -194,10 +194,10 @@ export function ProblemSolution() {
             >
               <div className="border-b border-[var(--border)] pb-8">
                 <h3 className="text-xl font-medium text-[var(--text-primary)] mb-3">
-                  The multi-model advantage
+                  Always current. Always capable.
                 </h3>
                 <p className="text-[var(--text-secondary)] leading-relaxed">
-                  Instant access to the latest AI models. Our multi-model approach outperforms single-model setups, keeping you testing with the best AI on the market.
+                  IMQA automatically leverages the most advanced AI models as they become available. Your tests improve continuously — without migration, without configuration.
                 </p>
                 <div className="flex items-center gap-4 mt-4">
                   <div className="w-8 h-8 rounded bg-[var(--bg-muted)] flex items-center justify-center text-xs font-bold">AI</div>
@@ -208,19 +208,19 @@ export function ProblemSolution() {
 
               <div className="border-b border-[var(--border)] pb-8">
                 <h3 className="text-xl font-medium text-[var(--text-primary)] mb-3">
-                  Full testing lifecycle, from one app
+                  End-to-end. One platform.
                 </h3>
                 <p className="text-[var(--text-secondary)] leading-relaxed">
-                  IMQA is built at the browser level, meaning it can write tests, run them, capture evidence, and even integrate with your CI/CD pipeline.
+                  Create tests, execute across environments, capture evidence, and integrate with CI/CD — all from a unified interface. No tool fragmentation. No context switching.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-medium text-purple-400 mb-3">
-                  Full Browser Automation
+                  Real browsers. Real interactions.
                 </h3>
                 <p className="text-[var(--text-secondary)] leading-relaxed">
-                  IMQA agents run real browser interactions, work inside any web app, and use advanced element detection for reliable test execution.
+                  IMQA agents operate at the browser level — clicking, typing, and navigating exactly as users do. Intelligent element detection ensures reliable execution, even as your UI evolves.
                 </p>
               </div>
             </motion.div>

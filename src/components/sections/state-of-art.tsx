@@ -8,23 +8,23 @@ const features = [
   {
     id: 1,
     image: "/screenshots/hero-bg.jpg",
-    title: "Run tests across all major browsers",
+    title: "Cross-browser execution",
     description:
-      "Execute your tests on Chrome, Firefox, Safari, and Edge. IMQA handles browser automation seamlessly across your entire test suite.",
+      "Chrome, Firefox, Safari, and Edge. One test suite, consistent results across every browser your users rely on.",
   },
   {
     id: 2,
     image: "/screenshots/hero-bg.jpg",
-    title: "Self-healing selectors that adapt to UI changes",
+    title: "Self-healing selectors",
     description:
-      "IMQA's AI automatically updates selectors when your UI changes, eliminating flaky tests and reducing maintenance overhead.",
+      "UI changes no longer break your tests. IMQA automatically adapts to element modifications, eliminating maintenance overhead.",
   },
   {
     id: 3,
     image: "/screenshots/hero-bg.jpg",
-    title: "Natural language test creation",
+    title: "Natural language input",
     description:
-      "Write tests in plain English. IMQA understands your intent and generates production-ready test code that integrates with your CI/CD pipeline.",
+      "Describe test scenarios in plain English. IMQA translates intent into production-ready code that integrates with your existing CI/CD workflow.",
   },
 ];
 
@@ -120,7 +120,7 @@ export function StateOfArt() {
                 marginBottom: "8px",
               }}
             >
-              State Of The Art
+              Platform capabilities
             </h2>
             <h2
               style={{
@@ -131,7 +131,7 @@ export function StateOfArt() {
                 fontWeight: 400,
               }}
             >
-              IMQA has everything you expect from a modern AI-powered testing tool
+              Everything you need to test with confidence
             </h2>
           </motion.div>
 

@@ -92,7 +92,7 @@ export function FullCycle() {
                   fontWeight: 400,
                 }}
               >
-                Full QA cycle
+                Complete testing workflow
               </h2>
               <h2
                 style={{
@@ -103,7 +103,7 @@ export function FullCycle() {
                   fontWeight: 400,
                 }}
               >
-                Complete testing tasks across the QA lifecycle, without leaving IMQA
+                Create. Execute. Analyze.
               </h2>
             </motion.div>
 
@@ -118,7 +118,7 @@ export function FullCycle() {
                 image="/screenshots/dashboard.png"
                 alt="IMQA Create Tests"
                 title="Create"
-                description="Write tests in natural language. IMQA understands your intent and generates production-ready test code automatically."
+                description="Write tests in natural language. IMQA interprets your intent and generates production-ready, maintainable code."
               />
             </motion.div>
 
@@ -155,7 +155,7 @@ export function FullCycle() {
                 image="/screenshots/test-results.png"
                 alt="IMQA Execute Tests"
                 title="Execute"
-                description="Run tests across browsers with self-healing selectors that adapt to UI changes without breaking your CI/CD pipeline."
+                description="Run across browsers with self-healing selectors. Tests adapt to UI changes automatically, keeping your pipeline stable."
               />
             </motion.div>
 
@@ -170,7 +170,7 @@ export function FullCycle() {
                 image="/screenshots/side-nav.png"
                 alt="IMQA Analyze Results"
                 title="Analyze"
-                description="Get video evidence, detailed logs, and AI-powered insights to debug failures in seconds, not hours."
+                description="Video recordings, detailed logs, and AI-powered diagnostics. Understand failures in seconds, not hours."
               />
             </motion.div>
           </div>

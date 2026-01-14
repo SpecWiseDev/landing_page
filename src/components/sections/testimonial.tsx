@@ -43,12 +43,12 @@ export function Testimonial() {
 
               {/* Quote - Large text */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight mb-4">
-                I used to be sold on Selenium...
+                We reduced test maintenance from 15 hours a week to under 2.
               </h2>
 
               {/* Quote continuation */}
               <p className="text-lg md:text-xl text-[rgba(250,249,246,0.7)] leading-relaxed max-w-2xl mx-auto mb-10">
-                ...after using IMQA, I understand what the future of QA automation looks like. IMQA is unlike any other tool I've used, and I'll never go back.
+                IMQA fundamentally changed how our team approaches quality — we ship faster and with more confidence than ever.
               </p>
 
               {/* Author */}
