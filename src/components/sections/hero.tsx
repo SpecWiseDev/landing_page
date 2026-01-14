@@ -109,11 +109,12 @@ export function Hero() {
               <div className="absolute inset-1 md:inset-2 lg:inset-3 flex items-center justify-center">
                 <div className="relative overflow-hidden shadow-2xl w-full" style={{ borderRadius: "8px" }}>
                   <Image
-                    src="/screenshots/dashboard-hero.png"
+                    src="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Dashboard_To_Test.gif"
                     alt="IMQA Dashboard"
                     width={1200}
                     height={800}
                     className="w-full h-auto"
+                    unoptimized
                     priority
                   />
                 </div>
