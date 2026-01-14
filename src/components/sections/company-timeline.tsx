@@ -4,34 +4,28 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    year: "2023",
+    year: "Nov 2025",
     title: "Founded",
     description:
       "Started with a simple idea: testing should be as easy as describing what you want to test.",
   },
   {
-    year: "2024",
-    title: "First customers",
+    year: "Dec 2025",
+    title: "First prototype",
     description:
-      "Launched beta with 10 design partners. Learned what engineering teams actually need.",
+      "Built the core AI engine. Natural language to test code became reality.",
   },
   {
-    year: "2024",
-    title: "Self-healing ships",
+    year: "Jan 2026",
+    title: "Beta launch",
     description:
-      "Released intelligent selector adaptation. Tests stopped breaking on UI changes.",
-  },
-  {
-    year: "2025",
-    title: "Enterprise ready",
-    description:
-      "SOC 2 compliance, SSO, and dedicated support. Ready for teams of any size.",
+      "Launched beta with early design partners. Learning what engineering teams actually need.",
   },
   {
     year: "Future",
     title: "What's next",
     description:
-      "Mobile testing, API validation, and AI-powered test generation from production traffic.",
+      "Self-healing selectors, cross-browser execution, and seamless CI/CD integration.",
   },
 ];
 
