@@ -1,26 +1,140 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warp-style Dark Theme */
+  --background: #121212;
+  --foreground: #fafafa;
+
+  /* Backgrounds */
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #1e1e1e;
+  --bg-card-hover: #252525;
+  --bg-elevated: #2a2a2a;
+  --bg-muted: #333333;
+
+  /* Text */
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1a1;
+  --text-muted: #6b6b6b;
+
+  /* Accent - Purple for AI (IMQA brand) */
+  --accent: #8b5cf6;
+  --accent-light: #a78bfa;
+  --accent-dark: #7c3aed;
+
+  /* Borders */
+  --border: #262626;
+  --border-light: #333333;
+
+  /* Success */
+  --success: #22c55e;
+
+  /* Radius */
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    border-color: var(--border);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Primary button - white/light on dark */
+  .btn-primary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  /* Secondary button - outline */
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+  }
+  .btn-secondary:hover {
+    background: var(--bg-muted);
+  }
+
+  /* Navigation */
+  .nav-link {
+    color: var(--text-primary);
+    transition: opacity 0.2s ease;
+  }
+  .nav-link:hover {
+    opacity: 0.7;
+  }
+
+  /* Announcement banner */
+  .announcement-bar {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Terminal command style */
+  .terminal-cmd {
+    font-family: var(--font-geist-mono), monospace;
+    color: var(--text-muted);
+  }
+
+  /* Section divider */
+  .section-divider {
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    height: 1px;
+  }
+
+  /* Screenshot glow effect */
+  .screenshot-glow {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 25px 50px -12px rgba(0, 0, 0, 0.5),
+      0 0 100px rgba(139, 92, 246, 0.1);
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Stagger delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
 }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Icon Mark -->
+  <rect x="0" y="0" width="120" height="120" rx="24" fill="#fafafa"/>
+  <!-- Checkmark -->
+  <path d="M28 60 L48 80 L92 36" stroke="#0a0a0a" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Woody accent dot -->
+  <circle cx="96" cy="96" r="12" fill="#d4a574"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120">
+  <!-- Icon Mark -->
+  <g transform="translate(20, 10)">
+    <rect x="0" y="0" width="100" height="100" rx="20" fill="#fafafa"/>
+    <!-- Checkmark -->
+    <path d="M24 50 L40 66 L76 30" stroke="#0a0a0a" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Woody accent dot -->
+    <circle cx="80" cy="80" r="10" fill="#d4a574"/>
+  </g>
+
+  <!-- I'm QA wordmark with woody apostrophe -->
+  <text x="145" y="80" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="800" fill="#fafafa" letter-spacing="-1">I</text>
+  <text x="168" y="80" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="800" fill="#d4a574" letter-spacing="-1">'</text>
+  <text x="182" y="80" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="800" fill="#fafafa" letter-spacing="-1">m QA</text>
+</svg>
