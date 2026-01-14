@@ -75,7 +75,7 @@ export function ImageComparisonSlider({
           src={afterBackground}
           alt=""
           fill
-          className="object-cover blur-sm"
+          className="object-cover blur-[2px] brightness-110"
           draggable={false}
         />
         {/* Overlay GIF/Image */}
@@ -110,7 +110,7 @@ export function ImageComparisonSlider({
             src={beforeBackground}
             alt=""
             fill
-            className="object-cover blur-sm"
+            className="object-cover blur-[2px]"
             draggable={false}
           />
           {/* Overlay GIF/Image */}

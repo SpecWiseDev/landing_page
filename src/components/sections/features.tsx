@@ -7,34 +7,34 @@ import Image from "next/image";
 const features = [
   {
     id: 1,
-    title: "Describe your test",
+    title: "Describe your scenario",
     description:
-      "Specify what to test in natural language. IMQA generates a detailed test plan you can review and refine before execution.",
-    image: "/screenshots/dashboard-navigation.gif",
+      "Share your requirements in plain language. The autonomous agent understands context and creates detailed test steps automatically.",
+    image: "/screenshots/Chat.png",
     isGif: true,
   },
   {
     id: 2,
-    title: "Generate code",
+    title: "Autonomous execution",
     description:
-      "Watch as IMQA writes production-ready test code. Every step is visible, editable, and can be adjusted in real-time.",
-    image: "/screenshots/test-recording.gif",
+      "The AI agent takes over — navigating your app, interacting with elements, and testing the scenario end-to-end without manual intervention.",
+    image: "https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Square_Agent_Live.gif",
     isGif: true,
   },
   {
     id: 3,
-    title: "Refine and iterate",
+    title: "Self-healing intelligence",
     description:
-      "Review generated tests, request modifications in natural language, or edit directly. Collaborative refinement until your tests are exactly right.",
-    image: "/screenshots/agent-input.png",
+      "When the experience changes, the agent adapts. If stuck, it asks clarifying questions. No brittle selectors, no flaky tests.",
+    image: "/screenshots/Agent_Input.png",
     isGif: false,
   },
   {
     id: 4,
-    title: "Deploy with confidence",
+    title: "Complete visibility",
     description:
-      "Push to CI/CD, monitor results, and let self-healing selectors handle maintenance. Your tests stay reliable as your product evolves.",
-    image: "/screenshots/product-tour.gif",
+      "Get full context with console logs, network requests, and accessibility insights. Deploy with confidence knowing exactly what happened.",
+    image: "https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Details.gif",
     isGif: true,
   },
 ];
@@ -112,9 +112,8 @@ export function Features() {
               return (
                 <div
                   key={feature.id}
-                  className={`relative cursor-pointer transition-all duration-300 rounded-[10px] ${
-                    isActive ? "bg-[#1e1e1e]" : "opacity-50 hover:opacity-70"
-                  }`}
+                  className={`relative cursor-pointer transition-all duration-300 rounded-[10px] ${isActive ? "bg-[#1e1e1e]" : "opacity-50 hover:opacity-70"
+                    }`}
                   onMouseEnter={() => handleFeatureHover(index)}
                 >
                   <div className="flex items-start gap-4 p-5">
@@ -127,9 +126,8 @@ export function Features() {
                     <div className="flex-1 min-w-0">
                       {/* Progress Bar */}
                       <div
-                        className={`h-[3px] rounded-full overflow-hidden mb-4 transition-opacity duration-300 ${
-                          isActive ? "opacity-100" : "opacity-0"
-                        }`}
+                        className={`h-[3px] rounded-full overflow-hidden mb-4 transition-opacity duration-300 ${isActive ? "opacity-100" : "opacity-0"
+                          }`}
                         style={{ background: "rgba(255, 255, 255, 0.16)" }}
                       >
                         <div
@@ -178,12 +176,14 @@ export function Features() {
 
             {/* Screenshot/GIF overlaid - vertically centered */}
             <div className="absolute inset-0 z-10 flex items-center justify-center p-6">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl border border-white/10 w-full h-[400px] md:h-[450px]">
+              <div
+                className="relative rounded-lg overflow-hidden shadow-2xl border border-white/10 aspect-square w-[95%]"
+              >
                 <Image
                   src={features[activeIndex].image}
                   alt={features[activeIndex].title}
                   fill
-                  className="object-cover object-top"
+                  className="object-fill"
                   unoptimized={features[activeIndex].isGif}
                 />
               </div>
