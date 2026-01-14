@@ -81,13 +81,12 @@ export function ImageComparisonSlider({
         {/* Overlay GIF/Image */}
         {afterOverlay && (
           <div className="absolute inset-4 md:inset-6 lg:inset-8 flex items-center justify-center">
-            <div className="relative w-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
+            <div className="relative w-full h-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
               <Image
                 src={afterOverlay}
                 alt={afterLabel}
-                width={1920}
-                height={1080}
-                className="w-full h-auto"
+                fill
+                className="object-cover object-top"
                 draggable={false}
                 unoptimized={afterOverlayIsGif}
                 quality={100}
@@ -117,13 +116,12 @@ export function ImageComparisonSlider({
           {/* Overlay GIF/Image */}
           {beforeOverlay && (
             <div className="absolute inset-4 md:inset-6 lg:inset-8 flex items-center justify-center">
-              <div className="relative w-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
+              <div className="relative w-full h-full overflow-hidden shadow-2xl" style={{ borderRadius: "8px" }}>
                 <Image
                   src={beforeOverlay}
                   alt={beforeLabel}
-                  width={1920}
-                  height={1080}
-                  className="w-full h-auto"
+                  fill
+                  className="object-cover object-top"
                   draggable={false}
                   unoptimized={beforeOverlayIsGif}
                   quality={100}
