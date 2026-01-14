@@ -67,7 +67,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <Link
-                href="https://github.com/IMQA-AI"
+                href="https://github.com/IMQA-AI/landing_page"
                 className="transition-colors"
                 style={{ color: "rgba(250, 249, 246, 0.5)" }}
               >
