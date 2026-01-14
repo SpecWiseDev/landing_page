@@ -107,7 +107,7 @@ export function Hero() {
 
               {/* Dashboard screenshot overlaid on scenic background */}
               <div className="absolute inset-4 md:inset-6 lg:inset-8">
-                <div className="relative rounded-xl overflow-hidden shadow-2xl h-full">
+                <div className="relative rounded-lg overflow-hidden shadow-2xl h-full">
                   <Image
                     src="/screenshots/dashboard-hero.png"
                     alt="IMQA Dashboard"
