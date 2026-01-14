@@ -49,7 +49,7 @@ export function ProblemSolution() {
         >
           <ImageComparisonSlider
             beforeBackground="/screenshots/pexels-rpnickson-2559941.jpg"
-            afterBackground="/screenshots/pexels-lastly-808466.jpg"
+            afterBackground="/screenshots/pexels-caleb-falkenhagen-216813613-29973772.jpg"
             beforeOverlay="/screenshots/quora-qa-automation-quora_automation-py-at-main-·-harmindersinghnijjar-quora-qa-automation-01-15-2026_02_33_AM.png"
             afterOverlay="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Live_Agent.gif"
             afterOverlayIsGif
