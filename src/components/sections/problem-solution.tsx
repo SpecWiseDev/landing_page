@@ -75,13 +75,12 @@ export function ProblemSolution() {
 
             {/* Screenshot Overlay */}
             <div className="absolute top-8 md:top-12 lg:top-16 bottom-2 md:bottom-4 lg:bottom-6 left-4 md:left-8 lg:left-12 right-4 md:right-8 lg:right-12">
-              <div className="relative rounded overflow-hidden shadow-2xl border border-white/10">
+              <div className="relative rounded overflow-hidden shadow-2xl border border-white/10 h-full">
                 <Image
                   src="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Dashboard_To_Test.gif"
                   alt="IMQA Dashboard"
-                  width={1200}
-                  height={700}
-                  className="w-full h-auto"
+                  fill
+                  className="object-cover object-top"
                   unoptimized
                 />
               </div>
