@@ -132,7 +132,7 @@ export function ImageComparisonSlider({
       {/* Labels */}
       <div className="absolute top-4 left-4">
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.1)",
             color: "rgba(250, 249, 246, 0.9)",
@@ -141,13 +141,12 @@ export function ImageComparisonSlider({
             backdropFilter: "blur(8px)",
           }}
         >
-          <div className="w-2 h-2 rounded-full bg-[var(--text-muted)]" />
           {beforeLabel}
         </div>
       </div>
       <div className="absolute top-4 right-4">
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.1)",
             color: "rgba(250, 249, 246, 0.9)",
@@ -157,7 +156,6 @@ export function ImageComparisonSlider({
           }}
         >
           {afterLabel}
-          <div className="w-2 h-2 rounded-full bg-purple-500" />
         </div>
       </div>
     </div>
