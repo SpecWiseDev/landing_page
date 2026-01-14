@@ -1,105 +1,78 @@
-# I'm QA - Landing Page
+<p align="center">
+  <img src="public/im-qa-logo-dark.svg" alt="I'm QA" width="280" />
+</p>
 
-A modern, premium landing page for **I'm QA** — an AI-powered QA testing platform that helps developers ship software with confidence.
+<p align="center">
+  <strong>The AI that tests your code</strong>
+</p>
 
-Built with Next.js 14+, Tailwind CSS, and Framer Motion.
+<p align="center">
+  <a href="https://imqa.ai">Website</a> •
+  <a href="https://app.imqa.ai">App</a> •
+  <a href="https://x.com/IMQA_AI">Twitter</a> •
+  <a href="https://www.linkedin.com/company/imqaai">LinkedIn</a>
+</p>
 
-## Tech Stack
-
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Font**: [Geist](https://vercel.com/font)
-- **Deployment**: [Vercel](https://vercel.com)
-
-## Features
-
-- Dark theme with premium aesthetic
-- Smooth scroll animations
-- Responsive design (mobile-first)
-- Glassmorphism dropdown navigation
-- Interactive FAQ accordion
-- Optimized for performance (90+ Lighthouse score)
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18.17 or later
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SpecWiseDev/landing_page.git
-   cd landing_page
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-npm run start
-```
-
-## Project Structure
-
-```
-├── public/
-│   ├── im-qa-icon.svg          # Brand icon
-│   ├── im-qa-logo-dark.svg     # Logo (dark theme)
-│   ├── im-qa-logo-light.svg    # Logo (light theme)
-│   └── screenshots/            # Product screenshots
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx          # Root layout
-│   │   ├── page.tsx            # Home page
-│   │   ├── globals.css         # Global styles
-│   │   └── icon.svg            # Favicon
-│   └── components/
-│       └── sections/
-│           ├── navigation.tsx  # Header navigation
-│           ├── hero.tsx        # Hero section
-│           ├── problem-solution.tsx
-│           ├── features.tsx
-│           ├── testimonial.tsx
-│           ├── full-cycle.tsx
-│           ├── state-of-art.tsx
-│           ├── faq.tsx
-│           ├── final-cta.tsx
-│           └── footer.tsx
-├── tailwind.config.ts
-└── package.json
-```
-
-## Color Palette
-
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Background | `#121212` | Page background |
-| Surface | `#1a1a1a` | Cards, dropdowns |
-| Accent | `#d4a574` | CTAs, highlights |
-| Text Primary | `rgba(250, 249, 246, 0.9)` | Headings |
-| Text Secondary | `rgba(250, 249, 246, 0.5)` | Body text |
-
-## License
-
-This project is proprietary software. All rights reserved.
+<p align="center">
+  <a href="https://x.com/IMQA_AI">
+    <img src="https://img.shields.io/twitter/follow/IMQA_AI?style=social" alt="Follow on X" />
+  </a>
+  <a href="https://www.linkedin.com/company/imqaai">
+    <img src="https://img.shields.io/badge/LinkedIn-IMQA-blue?logo=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://imqa.ai">
+    <img src="https://img.shields.io/badge/Website-imqa.ai-d4a574" alt="Website" />
+  </a>
+</p>
 
 ---
 
-Built with care by the I'm QA team.
+## About
+
+**I'm QA** is an AI-powered QA testing platform that helps developers ship software with confidence. Write tests in plain English, let AI handle the rest.
+
+This repository contains the source code for the I'm QA landing page.
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [Next.js 14+](https://nextjs.org/) | React Framework (App Router) |
+| [Tailwind CSS](https://tailwindcss.com/) | Styling |
+| [Framer Motion](https://www.framer.com/motion/) | Animations |
+| [Lucide React](https://lucide.dev/) | Icons |
+| [Geist](https://vercel.com/font) | Typography |
+| [Vercel](https://vercel.com) | Deployment |
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/SpecWiseDev/landing_page.git
+cd landing_page
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## Connect With Us
+
+- **Website:** [https://imqa.ai](https://imqa.ai)
+- **App:** [https://app.imqa.ai](https://app.imqa.ai)
+- **Twitter/X:** [@IMQA_AI](https://x.com/IMQA_AI)
+- **LinkedIn:** [IMQA](https://www.linkedin.com/company/imqaai)
+- **Email:** hello@imqa.ai
+
+---
+
+<p align="center">
+  <sub>Built with care by the I'm QA team</sub>
+</p>
