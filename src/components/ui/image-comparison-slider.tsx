@@ -85,11 +85,12 @@ export function ImageComparisonSlider({
               <Image
                 src={afterOverlay}
                 alt={afterLabel}
-                width={1200}
-                height={800}
+                width={1920}
+                height={1080}
                 className="w-full h-auto"
                 draggable={false}
                 unoptimized={afterOverlayIsGif}
+                quality={100}
               />
             </div>
           </div>
@@ -120,11 +121,12 @@ export function ImageComparisonSlider({
                 <Image
                   src={beforeOverlay}
                   alt={beforeLabel}
-                  width={1200}
-                  height={800}
+                  width={1920}
+                  height={1080}
                   className="w-full h-auto"
                   draggable={false}
                   unoptimized={beforeOverlayIsGif}
+                  quality={100}
                 />
               </div>
             </div>
