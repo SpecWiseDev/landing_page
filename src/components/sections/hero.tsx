@@ -97,7 +97,7 @@ export function Hero() {
             <div className="relative overflow-hidden" style={{ borderRadius: "8px" }}>
               {/* Background scenic image */}
               <Image
-                src="/screenshots/hero-bg.jpg"
+                src="/screenshots/pexels-mohamed-elshawry-10645-55367.jpg"
                 alt=""
                 width={1400}
                 height={1000}
