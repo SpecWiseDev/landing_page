@@ -7,24 +7,27 @@ import Image from "next/image";
 const features = [
   {
     id: 1,
-    image: "/screenshots/hero-bg.jpg",
+    image: "/screenshots/product-tour.gif",
     title: "Cross-browser execution",
     description:
       "Chrome, Firefox, Safari, and Edge. One test suite, consistent results across every browser your users rely on.",
+    isGif: true,
   },
   {
     id: 2,
-    image: "/screenshots/hero-bg.jpg",
+    image: "/screenshots/test-recording.gif",
     title: "Self-healing selectors",
     description:
       "UI changes no longer break your tests. IMQA automatically adapts to element modifications, eliminating maintenance overhead.",
+    isGif: true,
   },
   {
     id: 3,
-    image: "/screenshots/hero-bg.jpg",
+    image: "/screenshots/dashboard-navigation.gif",
     title: "Natural language input",
     description:
       "Describe test scenarios in plain English. IMQA translates intent into production-ready code that integrates with your existing CI/CD workflow.",
+    isGif: true,
   },
 ];
 
@@ -32,10 +35,12 @@ function FeatureCard({
   image,
   title,
   description,
+  isGif = false,
 }: {
   image: string;
   title: string;
   description: string;
+  isGif?: boolean;
 }) {
   return (
     <div className="flex-shrink-0 w-full md:w-[calc(33.333%-16px)]">
@@ -54,6 +59,7 @@ function FeatureCard({
             alt={title}
             fill
             className="object-cover"
+            unoptimized={isGif}
           />
           {/* Overlay for icons/content would go here */}
         </div>
@@ -204,6 +210,7 @@ export function StateOfArt() {
               image={feature.image}
               title={feature.title}
               description={feature.description}
+              isGif={feature.isGif}
             />
           ))}
         </motion.div>

@@ -8,11 +8,13 @@ function Card({
   alt,
   title,
   description,
+  isGif = false,
 }: {
   image: string;
   alt: string;
   title: string;
   description: string;
+  isGif?: boolean;
 }) {
   return (
     <div
@@ -34,6 +36,7 @@ function Card({
           src={image}
           alt={alt}
           fill
+          unoptimized={isGif}
           style={{
             objectPosition: "center center",
             objectFit: "cover",
@@ -115,10 +118,11 @@ export function FullCycle() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Card
-                image="/screenshots/dashboard.png"
+                image="/screenshots/dashboard-navigation.gif"
                 alt="IMQA Create Tests"
                 title="Create"
                 description="Write tests in natural language. IMQA interprets your intent and generates production-ready, maintainable code."
+                isGif
               />
             </motion.div>
 
@@ -152,10 +156,11 @@ export function FullCycle() {
                 </svg>
               </div>
               <Card
-                image="/screenshots/test-results.png"
+                image="/screenshots/test-recording.gif"
                 alt="IMQA Execute Tests"
                 title="Execute"
                 description="Run across browsers with self-healing selectors. Tests adapt to UI changes automatically, keeping your pipeline stable."
+                isGif
               />
             </motion.div>
 
@@ -167,7 +172,7 @@ export function FullCycle() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Card
-                image="/screenshots/side-nav.png"
+                image="/screenshots/agent-input.png"
                 alt="IMQA Analyze Results"
                 title="Analyze"
                 description="Video recordings, detailed logs, and AI-powered diagnostics. Understand failures in seconds, not hours."

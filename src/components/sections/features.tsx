@@ -10,28 +10,32 @@ const features = [
     title: "Describe your test",
     description:
       "Specify what to test in natural language. IMQA generates a detailed test plan you can review and refine before execution.",
-    image: "/screenshots/dashboard.png",
+    image: "/screenshots/dashboard-navigation.gif",
+    isGif: true,
   },
   {
     id: 2,
     title: "Generate code",
     description:
       "Watch as IMQA writes production-ready test code. Every step is visible, editable, and can be adjusted in real-time.",
-    image: "/screenshots/side-nav.png",
+    image: "/screenshots/test-recording.gif",
+    isGif: true,
   },
   {
     id: 3,
     title: "Refine and iterate",
     description:
       "Review generated tests, request modifications in natural language, or edit directly. Collaborative refinement until your tests are exactly right.",
-    image: "/screenshots/test-results.png",
+    image: "/screenshots/agent-input.png",
+    isGif: false,
   },
   {
     id: 4,
     title: "Deploy with confidence",
     description:
       "Push to CI/CD, monitor results, and let self-healing selectors handle maintenance. Your tests stay reliable as your product evolves.",
-    image: "/screenshots/dashboard.png",
+    image: "/screenshots/product-tour.gif",
+    isGif: true,
   },
 ];
 
@@ -172,7 +176,7 @@ export function Features() {
               />
             </div>
 
-            {/* Screenshot overlaid - vertically centered */}
+            {/* Screenshot/GIF overlaid - vertically centered */}
             <div className="absolute inset-0 z-10 flex items-center justify-center p-6">
               <div className="relative rounded-lg overflow-hidden shadow-2xl border border-white/10 w-full h-[400px] md:h-[450px]">
                 <Image
@@ -180,6 +184,7 @@ export function Features() {
                   alt={features[activeIndex].title}
                   fill
                   className="object-cover object-top"
+                  unoptimized={features[activeIndex].isGif}
                 />
               </div>
             </div>
