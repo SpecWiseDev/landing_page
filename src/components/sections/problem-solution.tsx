@@ -77,11 +77,12 @@ export function ProblemSolution() {
             <div className="absolute inset-4 md:inset-8 lg:inset-12">
               <div className="relative rounded overflow-hidden shadow-2xl border border-white/10">
                 <Image
-                  src="/screenshots/dashboard-hero.png"
+                  src="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Dashboard_To_Test.gif"
                   alt="IMQA Dashboard"
                   width={1200}
                   height={700}
                   className="w-full h-auto"
+                  unoptimized
                 />
               </div>
             </div>
