@@ -66,7 +66,7 @@ export function ProblemSolution() {
           <div className="relative rounded-2xl overflow-hidden">
             {/* Scenic Background */}
             <Image
-              src="/screenshots/pexels-aarti-vijay-1207504-2693529.jpg"
+              src="/screenshots/pexels-lastly-808466.jpg"
               alt=""
               width={1400}
               height={800}
