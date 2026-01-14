@@ -148,11 +148,9 @@ export function ImageComparisonSlider({
         <div
           className="inline-flex items-center px-4 py-2 text-sm font-medium"
           style={{
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-            color: "rgba(250, 249, 246, 0.9)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
+            backgroundColor: "#d4a574",
+            color: "#1a1a1a",
             borderRadius: "4px",
-            backdropFilter: "blur(8px)",
           }}
         >
           {afterLabel}
