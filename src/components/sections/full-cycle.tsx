@@ -69,7 +69,7 @@ function Card({
 
 export function FullCycle() {
   return (
-    <section className="relative py-24 bg-[var(--bg-primary)] overflow-hidden">
+    <section className="relative py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="relative">
           {/* 2x2 Grid Layout */}

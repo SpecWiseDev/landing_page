@@ -129,7 +129,7 @@ export function FAQ() {
   };
 
   return (
-    <section className="relative py-24 bg-[var(--bg-primary)]">
+    <section className="relative py-24">
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <motion.div

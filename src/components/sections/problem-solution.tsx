@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function ProblemSolution() {
   return (
-    <section className="relative py-24 bg-[var(--bg-primary)]">
+    <section className="relative py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Section - Two Column */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 mb-16">
@@ -100,8 +100,8 @@ export function ProblemSolution() {
                 className="object-cover opacity-30"
               />
               {/* Gradient overlay for readability */}
-              <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-transparent to-[var(--bg-primary)]" />
-              <div className="absolute inset-0 bg-[var(--bg-primary)]/60" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-black/40" />
             </div>
           </div>
 

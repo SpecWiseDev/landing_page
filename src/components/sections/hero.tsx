@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -72,20 +72,17 @@ export function Hero() {
             >
               <Link
                 href="https://app.imqa.ai/signup"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg text-base font-medium w-fit transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-medium w-fit transition-all duration-200 hover:scale-105"
                 style={{
-                  backgroundColor: "#d4a574",
+                  backgroundColor: "rgb(249, 250, 245)",
+                  borderRadius: "4px",
                   color: "#1a1a1a",
                 }}
               >
-                Get started free
-                <Download className="w-4 h-4" />
+                Run Agent
+                <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <div className="flex items-center gap-3 terminal-cmd text-sm">
-                <span className="text-[var(--text-muted)]">$</span>
-                <code>npx imqa init</code>
-              </div>
             </motion.div>
           </div>
 

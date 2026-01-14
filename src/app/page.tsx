@@ -8,20 +8,29 @@ import { StateOfArt } from "@/components/sections/state-of-art";
 import { FAQ } from "@/components/sections/faq";
 import { FinalCTA } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
+import { RotatingCubeBackground } from "@/components/ui/rotating-cube-background";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <Hero />
-      <ProblemSolution />
-      <Features />
-      <Testimonial />
-      <FullCycle />
-      <StateOfArt />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
-    </main>
+    <>
+      {/* Fixed rotating cube background - visible after hero */}
+      <RotatingCubeBackground />
+
+      <main className="relative min-h-screen" style={{ zIndex: 1 }}>
+        <Navigation />
+        <Hero />
+        {/* Content after hero sits above the rotating cube background */}
+        <div className="relative" style={{ zIndex: 1 }}>
+          <ProblemSolution />
+          <Features />
+          <Testimonial />
+          <FullCycle />
+          <StateOfArt />
+          <FAQ />
+          <FinalCTA />
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 }

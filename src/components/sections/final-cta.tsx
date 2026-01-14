@@ -83,13 +83,14 @@ export function FinalCTA() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://app.imqa.ai/signup"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-medium transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium transition-all duration-200 hover:scale-105"
                 style={{
-                  backgroundColor: "#d4a574",
+                  backgroundColor: "rgb(249, 250, 245)",
+                  borderRadius: "4px",
                   color: "#1a1a1a",
                 }}
               >
-                Get started free
+                Run Agent
                 <svg
                   width="16"
                   height="16"
@@ -98,7 +99,7 @@ export function FinalCTA() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3"
+                    d="M5 12h14M12 5l7 7-7 7"
                     stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
@@ -108,14 +109,15 @@ export function FinalCTA() {
               </a>
               <a
                 href="mailto:sales@imqa.ai"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-medium transition-all duration-200 hover:bg-white/20"
+                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-medium transition-all duration-200 hover:bg-white/20"
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.1)",
                   color: "rgba(250, 249, 246, 0.9)",
                   border: "1px solid rgba(255, 255, 255, 0.2)",
+                  borderRadius: "4px",
                 }}
               >
-                Contact sales
+                Request a demo
               </a>
             </div>
 

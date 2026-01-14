@@ -74,7 +74,7 @@ export function Features() {
   };
 
   return (
-    <section className="relative py-24 bg-[var(--bg-primary)]">
+    <section className="relative py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <motion.div

@@ -236,21 +236,15 @@ export function Navigation() {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-6">
               <Link
-                href="mailto:sales@imqa.ai"
-                className="text-[15px] transition-opacity hover:opacity-70"
-                style={{ color: "rgba(250, 249, 246, 0.9)" }}
-              >
-                Contact sales
-              </Link>
-              <Link
                 href="https://app.imqa.ai/signup"
-                className="px-5 py-2.5 rounded-lg text-[15px] font-medium transition-all hover:scale-105"
+                className="px-5 py-2.5 text-[15px] font-medium transition-all hover:scale-105"
                 style={{
-                  backgroundColor: "#d4a574",
+                  backgroundColor: "rgb(249, 250, 245)",
+                  borderRadius: "4px",
                   color: "#1a1a1a",
                 }}
               >
-                Get started free
+                Run Agent
               </Link>
             </div>
 
@@ -340,21 +334,15 @@ export function Navigation() {
                   style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)" }}
                 >
                   <Link
-                    href="mailto:sales@imqa.ai"
-                    className="py-2"
-                    style={{ color: "rgba(250, 249, 246, 0.9)" }}
-                  >
-                    Contact sales
-                  </Link>
-                  <Link
                     href="https://app.imqa.ai/signup"
-                    className="px-5 py-2.5 rounded-lg text-[15px] font-medium text-center"
+                    className="px-5 py-2.5 text-[15px] font-medium text-center"
                     style={{
-                      backgroundColor: "#d4a574",
+                      backgroundColor: "rgb(249, 250, 245)",
+                      borderRadius: "4px",
                       color: "#1a1a1a",
                     }}
                   >
-                    Get started free
+                    Run Agent
                   </Link>
                 </div>
               </div>

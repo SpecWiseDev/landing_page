@@ -7,16 +7,16 @@ export const SITE_CONFIG = {
   appUrl: "https://app.imqa.ai",
   email: "hello@imqa.ai",
   salesEmail: "sales@imqa.ai",
-  github: "https://github.com/imqa-ai",
-  twitter: "https://twitter.com/imqa_ai",
-  linkedin: "https://linkedin.com/company/imqa-ai",
+  github: "https://github.com/IMQA-AI",
+  twitter: "https://x.com/IMQA_AI",
+  linkedin: "https://www.linkedin.com/company/imqaai",
 };
 
 export const HERO = {
   badge: "AI-Powered Testing",
   headline: "The AI that tests your code",
   subheadline: "Write tests in plain English. Ship with confidence.",
-  ctaPrimary: "Start free trial",
+  ctaPrimary: "Run Agent",
   ctaSecondary: "Watch demo",
 };
 
@@ -147,7 +147,7 @@ export const PRICING_TIERS = [
       "Video recordings",
       "Email support",
     ],
-    cta: "Start free",
+    cta: "Run Agent",
     href: `${SITE_CONFIG.appUrl}/signup`,
     popular: false,
   },
@@ -164,7 +164,7 @@ export const PRICING_TIERS = [
       "CI/CD integrations",
       "Team collaboration",
     ],
-    cta: "Start free trial",
+    cta: "Run Agent",
     href: `${SITE_CONFIG.appUrl}/signup?plan=pro`,
     popular: true,
   },

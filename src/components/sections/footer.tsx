@@ -7,8 +7,9 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 const footerLinks = {
   Product: [
     { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Integrations", href: "#integrations" },
+    { label: "Roadmap", href: "https://imqa.featurebase.app/roadmap" },
     { label: "Changelog", href: "#" },
   ],
   Resources: [
@@ -34,7 +35,8 @@ export function Footer() {
     <footer
       className="py-16"
       style={{
-        backgroundColor: "#0f0f0f",
+        backgroundColor: "rgba(15, 15, 15, 0.8)",
+        backdropFilter: "blur(20px)",
         borderTop: "1px solid rgba(255, 255, 255, 0.1)",
       }}
     >
@@ -65,21 +67,21 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <Link
-                href="https://github.com/imqa-ai"
+                href="https://github.com/IMQA-AI"
                 className="transition-colors"
                 style={{ color: "rgba(250, 249, 246, 0.5)" }}
               >
                 <Github className="h-5 w-5 hover:text-[#d4a574]" />
               </Link>
               <Link
-                href="https://twitter.com/imqa_ai"
+                href="https://x.com/IMQA_AI"
                 className="transition-colors"
                 style={{ color: "rgba(250, 249, 246, 0.5)" }}
               >
                 <Twitter className="h-5 w-5 hover:text-[#d4a574]" />
               </Link>
               <Link
-                href="https://linkedin.com/company/imqa-ai"
+                href="https://www.linkedin.com/company/imqaai"
                 className="transition-colors"
                 style={{ color: "rgba(250, 249, 246, 0.5)" }}
               >
