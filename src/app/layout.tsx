@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,11 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        <script
           defer
           src="https://analytics.moonforge.co/script.js"
           data-website-id="047438c5-a904-4bdf-b855-606d24dffc0c"
-          strategy="afterInteractive"
         />
       </head>
       <body
