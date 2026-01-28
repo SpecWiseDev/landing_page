@@ -31,6 +31,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          defer
+          src="https://analytics.moonforge.co/script.js"
+          data-website-id="047438c5-a904-4bdf-b855-606d24dffc0c"
+        ></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

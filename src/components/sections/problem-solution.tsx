@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { ImageComparisonSlider } from "@/components/ui/image-comparison-slider";
 
 export function ProblemSolution() {
   return (
@@ -38,7 +39,7 @@ export function ProblemSolution() {
           </motion.div>
         </div>
 
-        {/* Large Product Screenshot with Labels */}
+        {/* Image Comparison Slider */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,46 +47,15 @@ export function ProblemSolution() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative mb-32"
         >
-          {/* Labels */}
-          <div className="flex justify-between items-center mb-4 px-2">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[var(--text-muted)]" />
-              <span className="text-sm text-[var(--text-muted)] uppercase tracking-wider">
-                Traditional QA
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-[var(--text-primary)] uppercase tracking-wider">
-                IMQA
-              </span>
-              <div className="w-2 h-2 rounded-full bg-purple-500" />
-            </div>
-          </div>
-
-          {/* Screenshot Container with Scenic Background */}
-          <div className="relative rounded-2xl overflow-hidden">
-            {/* Scenic Background */}
-            <Image
-              src="/screenshots/hero-bg.jpg"
-              alt=""
-              width={1400}
-              height={800}
-              className="w-full h-auto object-cover"
-            />
-
-            {/* Screenshot Overlay */}
-            <div className="absolute inset-4 md:inset-8 lg:inset-12">
-              <div className="relative rounded overflow-hidden shadow-2xl border border-white/10">
-                <Image
-                  src="/screenshots/dashboard-hero.png"
-                  alt="IMQA Dashboard"
-                  width={1200}
-                  height={700}
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
+          <ImageComparisonSlider
+            beforeBackground="/screenshots/pexels-rpnickson-2559941.jpg"
+            afterBackground="/screenshots/pexels-caleb-falkenhagen-216813613-29973772.jpg"
+            beforeOverlay="/screenshots/quora-qa-automation-quora_automation-py-at-main-·-harmindersinghnijjar-quora-qa-automation-01-15-2026_02_33_AM.png"
+            afterOverlay="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Live_Agent.gif"
+            afterOverlayIsGif
+            beforeLabel="Traditional QA"
+            afterLabel="IMQA"
+          />
         </motion.div>
 
         {/* State of the Art Section with Scenic Background */}

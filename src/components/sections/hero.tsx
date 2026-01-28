@@ -94,26 +94,27 @@ export function Hero() {
             className="relative"
           >
             {/* Scenic background image container */}
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative overflow-hidden" style={{ borderRadius: "8px" }}>
               {/* Background scenic image */}
               <Image
-                src="/screenshots/hero-bg.jpg"
+                src="/screenshots/pexels-mohamed-elshawry-10645-55367.jpg"
                 alt=""
-                width={1100}
-                height={800}
+                width={1400}
+                height={1000}
                 className="w-full h-auto object-cover"
                 priority
               />
 
               {/* Dashboard screenshot overlaid on scenic background */}
-              <div className="absolute inset-4 md:inset-6 lg:inset-8">
-                <div className="relative rounded overflow-hidden shadow-2xl">
+              <div className="absolute inset-1 md:inset-2 lg:inset-3 flex items-center justify-center">
+                <div className="relative overflow-hidden shadow-2xl w-full" style={{ borderRadius: "8px" }}>
                   <Image
-                    src="/screenshots/dashboard-hero.png"
+                    src="https://xhwueqrzbgdvqaranpkl.supabase.co/storage/v1/object/public/imqa_cdn/Dashboard_To_Test.gif"
                     alt="IMQA Dashboard"
-                    width={1000}
-                    height={700}
+                    width={1200}
+                    height={800}
                     className="w-full h-auto"
+                    unoptimized
                     priority
                   />
                 </div>

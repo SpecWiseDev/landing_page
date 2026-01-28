@@ -43,11 +43,10 @@ export function RotatingCubeBackground() {
             transformStyle: "preserve-3d",
           }}
           animate={{
-            rotateX: [0, 360],
             rotateY: [0, 360],
           }}
           transition={{
-            duration: 20,
+            duration: 80,
             ease: "linear",
             repeat: Infinity,
           }}
